@@ -7,7 +7,12 @@ const port = 3000
 // })
 app.use(express.static("public"));
 
-const io = require('socket.io')(3005);
+const io = require('socket.io')(3005,{
+  cors: {
+    origin: "*", 
+    credentials: true
+  }
+});
 
 const chatlog = [];
 

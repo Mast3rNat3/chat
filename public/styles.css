@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+}
+
+
+.chatbox{
+    border: 1px solid #777;
+    width:50%;
+    height: 100vh;
+    margin: 0 auto;
+    line-height: 0;
+    white-space: nowrap;
+    font-size: 0;
+}
+.chatlog{
+    height: calc(100vh - 100px);
+    border-bottom: 1px solid #777;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    font-size: 18px;
+}
+textarea{
+    display: inline-block;
+    width: calc(100% - 120px);
+    resize: none;
+    height: 100px;
+    margin: 0;
+    vertical-align: top;
+    font-size: 18px;
+}
+button{
+    height: 100px;
+    display: inline-block;
+    width: 120px;
+    margin: 0;
+    vertical-align: top;
+    font-size: 18px;
+}
+.message{
+    width:100%;
+    height: auto;
+    margin-bottom: 10px;
+    white-space: normal;
+    line-height: 24px;
+    padding-left: 18px;
+
+}
+
+.message strong{
+
+}
+
+.message span{
+
+}

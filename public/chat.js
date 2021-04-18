@@ -4,6 +4,7 @@ const storageKey="username";
 
 
 document.addEventListener('DOMContentLoaded' , (event)=> {
+    console.log(io);
     const log=document.getElementById("log");
     var username=storage.getItem(storageKey);
     if(!username) {
@@ -34,5 +35,6 @@ document.addEventListener('DOMContentLoaded' , (event)=> {
     const send=document.getElementById("send");
     send.addEventListener("click", ()=>{
         insertMessage(message.value);
+        message.value="";
     });
 });
